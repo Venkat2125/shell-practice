@@ -33,7 +33,7 @@ echo "sub of num1, num2 = $sub"
 #multiplication
 num_1=45
 num_2=20
-total=$(($num_1*$num))
+total=$((num_1 * num_2))
 echo "total pf num1, num2 = $total"
 
 #divison
