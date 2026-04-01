@@ -29,3 +29,15 @@ num1=48
 num2=73
 sub=$(($num1-$num2))
 echo "sub of num1, num2 = $sub"
+
+#multiplication
+num_1=45
+num_2=20
+total=$(($num_1*$num))
+echo "total pf num1, num2 = $total"
+
+#divison
+num=12
+num3=46
+div=$(($num/$num3))
+echo "divison of $div"
