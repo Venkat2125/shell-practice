@@ -10,11 +10,10 @@ else
 fi
 
 #or
-num1=$1
-num2=$((num1/2))
-if [ $num2 -eq 0 ];
+echo "Enter a number"
+read number
+if [ $(($number % 2)) -eq 0 ];
 then
-    echo "$num1 is even number"
+    echo "given number $number is even"
 else
-    echo "$number is odd number"
-fi
+    echo "given number $number is odd"
