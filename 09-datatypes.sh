@@ -9,4 +9,4 @@ echo "total of x,y,z =${total}"
 
 #variables
 name=("venkat" "ammu" "sai" "chitti" "umesh" "puru")
-echo "all names: $(name)[@]"
+echo "all names: ${name[@]}"
