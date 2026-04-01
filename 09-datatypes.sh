@@ -17,3 +17,9 @@ echo " city list ${city[@]}"
 echo "index of fourth city: ${city[3]}"
 echo "second city: third city: ${city[6]}"
 echo "last city: ${city[12]}"
+
+#addition
+number1=47
+number2=76
+sum=$(($number1+$number2))
+echo "sum of two numbers $sum"
