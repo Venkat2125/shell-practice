@@ -1,3 +1,3 @@
 #!/bin/bash
-today=$("date +%y-%m-%H-%M-%S")
+today=$(date)
 echo "today date with sec $today"
