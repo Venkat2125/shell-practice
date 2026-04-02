@@ -6,8 +6,10 @@ user_id=$(id -u)  #id -u will check root access
 if [ $user_id -ne 0 ];
 then
     echo " user has doesn't root access,please use root user"
+    exit 1
 else
     echo "sudo user logged in"
+
 fi
 dnf install mysql-server -y
 
@@ -15,6 +17,7 @@ dnf install mysql-server -y
 if [ $? -eq 0 ];
 then
     echo "installed successfully"
+    exit 1
 else
     echo "failed check logs"
 fi
