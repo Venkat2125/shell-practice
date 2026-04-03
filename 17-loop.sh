@@ -23,7 +23,7 @@ validate(){
         exit 1
     else
         echo -e  "installing $2 ... $R failure $N"
-
+    fi
 }
 
 #loops
@@ -31,9 +31,9 @@ for package in $@
 do
  #check package installed or not
     dnf list installed $package &>>$log_file
- if [ $? -n 0 ]; then
-    dnf install $package -y &>>$logfile
-    validate $? "package"
-else
-    echo "failed"
-fi
+    if [ $? -n 0 ]; then
+        dnf install $package -y &>>$logfile
+        validate $? "package"
+    else
+        echo "failed"
+    fi
