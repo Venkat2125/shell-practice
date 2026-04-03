@@ -23,6 +23,7 @@ check_user=$(id -u)
 if [ $check_user -eq 0 ];
 then
     echo "logged in sudo user"
+    exit 1
 else
     echo "it's doesnt have access, login sudo user"
 fi
