@@ -6,6 +6,7 @@ user_id=$(id -u)
 if [ $user_id -ne 0 ];
 then
     echo "logged failed"
+    exit 1
 else
     echo "logged successfully"
 fi
