@@ -37,3 +37,4 @@ do
     else
         echo "failed"
     fi
+done
